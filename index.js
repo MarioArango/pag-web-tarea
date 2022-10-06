@@ -15,9 +15,7 @@ window.addEventListener('hashchange', () => {
     console.log(route)
     switch(route){
         case "#home-page":
-            // handleHomePage()
-            handleProducts()
-
+            handleHomePage()
             break;
         case "#history":
             handleHistory()

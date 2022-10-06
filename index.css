@@ -14,8 +14,8 @@ body {
 /* Navigation */
 .header {
     background-color: #7D6E83;
-    height: 100vh;
     width: 15vw;
+    height: 100vh;
 }
 
 .link {
@@ -36,8 +36,9 @@ a {
 /* Content */
 .main {
     width: 85vw;
-    height: 100%;
+    height: 100vh;
     padding: 10px;
+    overflow-y: auto;
 }
 
 .not-view {
@@ -48,23 +49,43 @@ a {
     display: block;
 }
 
-.image {
+.title {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-description {
+    width: 90%;
+    background-color: #F5EFE6;
+    padding: 15px;
+    border-radius: 30px;
+    margin-inline: auto;
+    margin-block-end: 20px;
+}
+
+/* HISTORY */
+.list-history {
+    padding-left: 40px;
+}
+
+.image-history {
     display: block;
     object-fit: contain;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 380;
     margin-inline: auto;
     margin-block: 10px;
     border-radius: 20px;
 }
 
-.image:hover {
-    width: 305px;
-    height: 305px;
+.image-history:hover {
+    width: 505px;
+    height: 385;
     transition: 0.5s;
     cursor: pointer;
 }
-
 
 /* PRODUCTS */
 .product {
@@ -76,7 +97,7 @@ a {
     margin-block-end: 20px;
     width: 570px;
     height: 430px;
-    transition: box-shadow 05s;
+    transition: box-shadow 0.5s;
 }
 
 .product:hover {
@@ -84,13 +105,59 @@ a {
     box-shadow: 0 0 11px #7D6E83; 
 }
 
-.title-product {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
-}
-
 .list-products {
     padding-left: 40px;
+}
+
+.image-product {
+    display: block;
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+    margin-inline: auto;
+    margin-block: 10px;
+    border-radius: 20px;
+}
+
+.image-product:hover {
+    width: 305px;
+    height: 305px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* SERVICE */
+.image-service {
+    display: block;
+    object-fit: contain;
+    width: 430px;
+    margin-inline: auto;
+    margin-block: 10px;
+    border-radius: 20px;
+}
+
+.image-service:hover {
+    width: 435px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact-service {
+    color: #7D6E83;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.contact-service:hover {
+    color: #544958;
+}
+
+.subtitle-service {
+    color: #7D6E83;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.options-service {
+    padding-left: 30px;
 }
