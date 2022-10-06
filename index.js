@@ -12,7 +12,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener('hashchange', () => {
     const route = location.hash;
-    console.log(route)
     switch(route){
         case "#home-page":
             handleHomePage()
@@ -64,7 +63,7 @@ const handleHistory = () => {
 }
 
 const handleManagement = () => {
-    location.hash = "history"
+    location.hash = "management"
 
     homePage.classList.add("not-view")
     history.classList.add("not-view")

@@ -14,7 +14,7 @@ body {
 /* Navigation */
 .header {
     background-color: #7D6E83;
-    width: 15vw;
+    min-width: 180px;
     height: 100vh;
 }
 
@@ -25,12 +25,22 @@ body {
     padding: 4px;
     cursor: pointer;
 }
+
 .link:hover {
+    background-color: #fafafa;
     color: #D0B8A8;
 }
 
 a {
     text-decoration: none;
+}
+
+.cursiva-underline {
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #7D6E83;
+    font-size: 17px;
 }
 
 /* Content */
@@ -51,8 +61,7 @@ a {
 
 .title {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -63,6 +72,22 @@ a {
     border-radius: 30px;
     margin-inline: auto;
     margin-block-end: 20px;
+}
+
+/* HOME */
+.title-home {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+
+.image-home {
+    display: block;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 100px;
+    border-radius: 20px;
 }
 
 /* HISTORY */
@@ -87,7 +112,18 @@ a {
     cursor: pointer;
 }
 
+.contact-service-general {
+    color: #7D6E83;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 90%;
+}
+
 /* PRODUCTS */
+#products {
+    margin-top: 10px;
+}
+
 .product {
     width: 70%;
     background-color: #F5EFE6;
@@ -160,4 +196,30 @@ a {
 
 .options-service {
     padding-left: 30px;
+}
+
+/* MANAGEMENT */
+#testimonial {
+    margin-top: 5%;
+}
+
+.info-management {
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.content-testimonial {
+    width: 50%;
+    background-color: #F5EFE6;
+    padding: 15px;
+    border-radius: 30px;
+    margin-inline: auto;
+    margin-block-end: 20px;
+    transition: box-shadow 0.5s;
+    margin-block: 50px;
+}
+
+.content-testimonial:hover {
+    cursor: pointer;
+    box-shadow: 0 0 11px #7D6E83;
 }
