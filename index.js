@@ -5,6 +5,7 @@ const management = document.getElementById("management")
 const products = document.getElementById("products")
 const services = document.getElementById("services")
 const testimonial = document.getElementById("testimonial")
+const team = document.getElementById("team")
 
 window.addEventListener("DOMContentLoaded", () => {
     handleHomePage()
@@ -31,6 +32,9 @@ window.addEventListener('hashchange', () => {
         case "#testimonial":
             handleTestimonial()
             break
+        case "#team":
+            handleTeam()
+            break
         default:
             handleHomePage()
     }
@@ -44,6 +48,7 @@ const handleHomePage = () => {
     products.classList.add("not-view")
     services.classList.add("not-view")
     testimonial.classList.add("not-view")
+    team.classList.add("not-view")
 
     homePage.classList.remove("not-view")
     homePage.classList.add("view")
@@ -57,6 +62,7 @@ const handleHistory = () => {
     products.classList.add("not-view")
     services.classList.add("not-view")
     testimonial.classList.add("not-view")
+    team.classList.add("not-view")
 
     history.classList.remove("not-view")
     history.classList.add("view")
@@ -70,6 +76,7 @@ const handleManagement = () => {
     products.classList.add("not-view")
     services.classList.add("not-view")
     testimonial.classList.add("not-view")
+    team.classList.add("not-view")
 
     management.classList.remove("not-view")
     management.classList.add("view")
@@ -83,6 +90,7 @@ const handleProducts = () => {
     management.classList.add("not-view")
     services.classList.add("not-view")
     testimonial.classList.add("not-view")
+    team.classList.add("not-view")
 
     products.classList.remove("not-view")
     products.classList.add("view")
@@ -96,6 +104,7 @@ const handleServices = () => {
     management.classList.add("not-view")
     products.classList.add("not-view")
     testimonial.classList.add("not-view")
+    team.classList.add("not-view")
 
     services.classList.remove("not-view")
     services.classList.add("view")
@@ -109,7 +118,22 @@ const handleTestimonial = () => {
     management.classList.add("not-view")
     products.classList.add("not-view")
     services.classList.add("not-view")
+    team.classList.add("not-view")
 
     testimonial.classList.remove("not-view")
     testimonial.classList.add("view")
+}
+
+const handleTeam = () => {
+    location.hash = "team"
+
+    homePage.classList.add("not-view")
+    history.classList.add("not-view")
+    management.classList.add("not-view")
+    products.classList.add("not-view")
+    services.classList.add("not-view")
+    testimonial.classList.add("not-view")
+
+    team.classList.remove("not-view")
+    team.classList.add("view")
 }

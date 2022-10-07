@@ -223,3 +223,20 @@ a {
     cursor: pointer;
     box-shadow: 0 0 11px #7D6E83;
 }
+
+/* TEAM */
+.team {
+    width: 50%;
+    background-color: #F5EFE6;
+    padding: 15px;
+    border-radius: 30px;
+    margin-inline: auto;
+    margin-block-end: 20px;
+    transition: box-shadow 0.5s;
+    margin-block: 50px;
+}
+
+.team-name {
+    margin-left: 20px;
+    margin-block: 10px;
+}
